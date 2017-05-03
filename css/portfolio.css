@@ -1,0 +1,543 @@
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	display: flex;
+	flex-direction: column;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h3 {
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	
+}
+
+.parallax {
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* ========== ========== ========== ========== ========== ========== ========== ========== ===========
+========== ========== ========== ========== MAIN SECTION ========== ========== ========== =========== 
+=========== ========== ========== ========== ========== ========== ========== ========== ========== */
+
+
+
+#main-content {
+	background-image: url(../img/main.jpg);
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	position: relative;
+}
+
+#main-hello {
+	align-self: center;
+	justify-content: center;
+	font-size: 5em;
+	flex-grow: 1;
+	text-align: center;
+	color: #222;
+	display: block;
+}
+
+#emptydiv {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 60%;
+}
+
+.toggle {
+  width: 40px;
+  height: 33px;
+  margin: 10px auto;
+  right: 20px;
+  position: absolute;
+}
+
+.toggle div {
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin: 6px auto;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+#menu {
+  color: black;
+  list-style: none;
+  display: none;
+  width: 370px;
+  height: auto;
+  padding: 7px;
+  text-align: center;
+  margin-left: -50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  justify-content: space-between;
+
+}
+
+#menu li {
+	display: inline-block;
+	padding: 4px 14px;
+	font-size: 1.3em;
+	font-weight: lighter;
+}
+
+#menu a {
+	text-decoration: none;
+	color: white;
+}
+
+.toggle.on .one {
+  transform: rotate(45deg) translate(9px, 8px);
+}
+
+.toggle.on .two {
+  opacity: 0;
+}
+
+.toggle.on .three {
+  transform: rotate(-45deg) translate(8px, -6px);
+}
+
+#arrow {
+	position: absolute;
+	font-size: 0.5em;
+	top: 80%;
+	left: 48%;
+}
+
+/* ========== ========== ========== ========== ========== ========== ========== ========== ===========
+========== ========== ========== ========== ABOUT SECTION ========== ========== ========== =========== 
+=========== ========== ========== ========== ========== ========== ========== ========== ========== */
+
+.section-header {
+	color: #111;
+	font-size: 2em;
+	font-weight: bolder;
+}
+
+.about-text {
+	padding: 30px;
+	text-align: center;
+	font-size: 1.7em;
+	color: #1C2833;
+	font-weight: 200;
+}
+
+/* ========== ========== ========== ========== ========== ========== ========== ========== ===========
+========== ========== ========== ========== SKILLS SECTION ========== ========== ========== ========== 
+ ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+
+#skills {
+	background-image: url(../img/skills.jpg);
+	background-size: cover;
+	height: auto;
+}
+
+#skills-list-container {
+	background-color: rgba(0, 0, 0, 0.75);
+	height: 100%;
+	font-size: 1.7em;
+	padding-bottom: 30px;
+}
+
+#skills-list-container>h3 {
+	color: white;
+}
+
+#skills-list {
+	list-style: none;
+	color: white;
+	margin: 0 auto;
+	font-size: 1.3em;
+	font-weight: 200;
+	padding-left: 0;
+}
+
+#skills-list li {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#skills-list li span {
+	font-size: 3.4em;
+	font-weight: 600;
+}
+
+.loading-bar {
+	height: 11px;
+	width: 50%;
+	position: relative;
+	margin: 30px auto;
+	padding: 3px;
+	background-color: white;
+}
+
+.inside-bar {
+	position: absolute;
+	height: 5px;	
+	background-color: #ff5d4c;
+}
+
+.html-bar {
+	width: 75%
+}
+
+.css-bar {
+	width: 75%
+}
+
+.bs-bar {
+	width: 60%
+}
+
+.js-bar {
+	width: 60%
+}
+
+.jquery-bar {
+	width: 40%
+}
+
+.git-bar {
+	width: 33%
+}
+
+/* ========== ========== ========== ========== ========== ========== ========== ========== ===========
+========== ========== ========== ========== PHILOSOPHY SECTION ========== ========== ========== ========== 
+ ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+
+.philosophy {
+	height: auto;
+	margin: 0;
+	padding: 10px 20px 20px;
+	text-align: center;
+	font-weight: 200;
+}
+
+#philo-header>h3 {
+	padding-bottom: 15px;
+}
+
+.philosophy p {
+	text-align: center;
+	font-size: 1.6em;
+	margin-top: 20px;
+}
+
+.philosophy i {
+	font-size: 8em;
+	margin-top: 20px;
+}
+
+.odd {
+	background-color: #111;
+	color: #eee !important;
+}
+
+.even {
+	background-color: #eee;
+	color: #011 !important;
+}
+
+.black {
+	color: #040f14;
+}
+/* ========== ========== ========== ========== ========== ========== ========== ========== ===========
+========== ========== ========== ========== PORTFOLIO SECTION ========== ========== ========== ========== 
+ ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+
+#portfolio {
+	height: auto;
+}
+
+#portfolio>h3 {
+	color: white;
+}
+
+#portfolio-container{	/*	div   */
+	display: flex;
+	justify-content: center;
+}
+
+#projects-list {	/*	ul 	*/
+	list-style: none;
+	margin-top: 20px;
+	padding: 0;
+	flex-direction: column;
+}
+
+#projects-list li {
+	margin-bottom: 20px;
+}
+
+#projects-list li img {
+	width: 100%;
+}
+
+#projects-list a.darken {					/* Darkening the images when hovered */				
+    display: flex;
+    background: black;
+    padding: 0;
+    position: relative;
+    justify-content: center;
+}
+
+#projects-list a.darken img {
+    display: block;
+
+    -webkit-transition: all 0.4s linear;
+       -moz-transition: all 0.4s linear;
+        -ms-transition: all 0.4s linear;
+         -o-transition: all 0.4s linear;
+            transition: all 0.4s linear;
+}
+
+#projects-list a.darken:hover img {
+    opacity: 0.3;
+}
+
+#projects-list a.darken span {
+    position: absolute;
+    font-size: 1.7em;
+    color: rgba(255, 255, 255, 0);
+    align-self: center;
+    padding: 10px;
+}
+
+#projects-list a.darken:hover span {
+    color: rgba(255, 255, 255, 1); 
+
+
+}
+
+/* ========== ========== ========== ========== ========== ========== ========== ========== ===========
+========== ========== ========== ========== CONTACT SECTION ========== ========== ========== ========== 
+ ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+
+#contact {
+	background-image: url("../img/contact.jpg");
+	height: auto;
+}
+
+#contact>h3 {
+	color: white;
+	font-size: 2.3em;
+}
+
+form {
+	margin: 25px;
+}
+
+.btn-primary {
+	margin: 15px auto;
+	background-color: #ff5d4c;
+	border-color: #8c372b;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2em;
+	width: 10em;
+}
+
+#contact label {
+	color: white;
+	font-size: 1.2em;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 200;
+}
+
+/* ========== ========== ========== ========== ========== ========== ========== ========== ===========
+========== ========== ========== ========== FOOTER SECTION ========== ========== ========== ========== 
+ ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+
+footer {
+	height: auto;
+	background-color: #F1F0F0;
+	padding-bottom: 16px;
+	border-top: 2px solid #FF5D4C;
+	margin-top: -25px;
+
+}
+
+footer p {
+	margin: 10px auto;
+	font-size: 1.3em;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+#social-list {				/* ul  */
+	list-style: none;
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+	margin-left: -15px;
+}
+
+#social-list li {
+	flex-direction: row;
+	margin-left: 30px;
+}
+
+/* ========== ========== ========== ========== ========== ========== ========== ========== ===========
+========== ========== ========== ========== NEW CLASSES ========== ========== ========== ========== 
+ ========== ========== ========== ========== ========== ========== ========== ========== ========== */
+
+ .blackhover {
+ 	background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ /*****************************************************************************************************
+  **************************************** MEDIA QUERIES **********************************************
+ /*****************************************************************************************************/
+
+ @media (min-width: 500px) {
+ 	#portfolio-container {
+ 		text-align: center;
+ 	}
+
+ 	#projects-list {
+ 		display: flex;
+ 		justify-content: center;
+ 	}
+
+ 	#projects-list li {
+ 		align-self: center;
+ 		left: 5%;
+ 	}
+ }
+
+ @media (min-width: 680px) {
+ 	
+ 	.toggle {
+ 		display: none;
+ 	}
+
+ 	#main-content{
+ 		position: relative;
+ 	}
+
+ 	#main-hello {
+ 		display: block;
+ 		width: 100%;
+ 	}
+
+ 	#menu {
+ 		display: flex;
+ 		align-content: center;
+ 		width: 100%;
+ 		height: 60px;
+ 		position: absolute;
+ 		left: 50%;
+ 		border-radius: 0;
+ 		justify-content: space-around;
+ 	}
+
+ 	#menu li {
+ 		align-self: center;
+ 		font-size: 1.9em;
+ 	}
+
+ 	#skills-list {
+ 		display: flex;
+ 		flex-wrap: wrap;
+ 		justify-content: center;
+ 	}
+
+ 	#skills-list li {
+ 		flex-basis: 300px;
+ 		align-self: center;
+ 	}
+ }
+
+ @media (min-width: 760px) {
+ 	
+	.philosophy-container {
+		display: flex;
+	}
+
+	.philosophy {
+		flex: row;
+		background-color: white;
+		color: #111;
+	}
+
+	.philosophy h3 {
+		font-size: 2.5em;
+		color: #111;
+	}
+
+	.philosophy p, .philosophy i {
+		background-color: white;
+		color: #111;
+	}
+
+	#philo-header h3 {
+		font-size: 2.5em;
+	}
+
+	#portfolio h3 {
+		background-color: #ff5d4c;
+		font-size: 2.5em;
+		padding-bottom: 20px;
+	}
+
+	form {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+ }
+
+ @media (min-width: 1024px) {
+ 		
+ 	.philosophy {
+		flex-grow: 1;
+		flex-basis: 500px;
+	}
+
+ 	#about {
+ 		padding-left: 120px;
+ 		padding-right: 120px;
+ 	}
+
+ 	#projects-list {
+ 		display: flex;
+ 		width: 100%;
+ 		flex-wrap: wrap;
+ 		align-items: stretch;
+ 		flex-direction: row;
+ 		justify-content: space-around;
+ 	}
+
+ 	form {
+		padding-left: 33%;
+		padding-right: 33%;
+		padding-bottom: 15px;
+	}
+}
