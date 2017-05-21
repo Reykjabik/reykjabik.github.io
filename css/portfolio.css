@@ -48,6 +48,13 @@ h3 {
 	position: relative;
 }
 
+#main-content h2 {
+	position: absolute;
+	top: 60%;
+	left: 32.5%;
+	display: none;
+}
+
 #main-hello {
 	align-self: center;
 	justify-content: center;
@@ -224,6 +231,10 @@ h3 {
 
 .git-bar {
 	width: 33%
+}
+
+.sass-bar {
+	width: 40%
 }
 
 /* ========== ========== ========== ========== ========== ========== ========== ========== ===========
@@ -476,7 +487,7 @@ footer p {
  }
 
  @media (min-width: 760px) {
- 	
+
 	.philosophy-container {
 		display: flex;
 	}
@@ -515,7 +526,12 @@ footer p {
  }
 
  @media (min-width: 1024px) {
- 		
+
+	#main-content h2 {
+ 		display: block;
+ 	}
+
+
  	.philosophy {
 		flex-grow: 1;
 		flex-basis: 500px;
